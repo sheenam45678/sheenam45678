@@ -214,7 +214,9 @@ $result= mysqli_query($conn,$sql);
 <form method="post" action=""> 
 
 <label > P_Name</label> 
-    <input type="text" name="project_name" id="a" value="<?php echo $proj_name;?>"><br>
+    <input type="text" name="project_name" id="a" value="<?php echo $proj_name;?>">
+	  <span class="error"><?php echo $nameerr;?></span>
+	<br>
   
  <label> description:</label> <input type=textarea col="50" rows="30" name="desc" value="<?php echo $pro_descr;?>">
   <span class="error">* <?php echo $deserr;?></span>
